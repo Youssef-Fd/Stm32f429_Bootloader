@@ -93,15 +93,3 @@ STM32F429ZITX_FLASH.ld      Linker script: bootloader in the first 64 KB of flas
 STM32F429ZITX_RAM.ld        Linker script: debug in RAM
 Stm32f429_Bootloader.ioc    STM32CubeMX configuration
 ```
-
-## Roadmap
-
-- Receive a new firmware image over UART and write it to the application region
-- Erase the application sectors and program them through the HAL flash API
-- Verify the image with the hardware CRC unit before jumping
-- Check that the application's stack pointer and reset handler are valid before jumping
-- Remove the unused CubeMX peripherals (LTDC, DMA2D, SDRAM, I2C3, SPI5)
-
-## Author
-
-Youssef Fadel
